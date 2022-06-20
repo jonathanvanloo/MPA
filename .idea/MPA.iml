@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<module type="WEB_MODULE" version="4">
+  <component name="NewModuleRootManager">
+    <content url="file://$MODULE_DIR$">
+      <sourceFolder url="file://$MODULE_DIR$/shopping-cart/app" isTestSource="false" packagePrefix="App\" />
+      <sourceFolder url="file://$MODULE_DIR$/shopping-cart/database/factories" isTestSource="false" packagePrefix="Database\Factories\" />
+      <sourceFolder url="file://$MODULE_DIR$/shopping-cart/database/seeders" isTestSource="false" packagePrefix="Database\Seeders\" />
+      <sourceFolder url="file://$MODULE_DIR$/shopping-cart/tests" isTestSource="true" packagePrefix="Tests\" />
+      <sourceFolder url="file://$MODULE_DIR$/spec" isTestSource="true" />
+      <sourceFolder url="file://$MODULE_DIR$/tests" isTestSource="true" />
+      <excludeFolder url="file://$MODULE_DIR$/shopping-cart/vendor/brick/math" />
+      <excludeFolder url="file://$MODULE_DIR$/shopping-cart/vendor/league/mime-type-detection" />
+      <excludeFolder url="file://$MODULE_DIR$/shopping-cart/vendor/league/commonmark" />
+      <excludeFolder url="file://$MODULE_DIR$/shopping-cart/vendor/nikic/php-parser" />
+      <excludeFolder url="file://$MODULE_DIR$/shopping-cart/vendor/league/config" />
+      <excludeFolder url="file://$MODULE_DIR$/shopping-cart/vendor/psr/log" />
+      <excludeFolder url="file://$MODULE_DIR$/shopping-cart/vendor/laravel/sail" />
+      <excludeFolder url="file://$MODULE_DIR$/shopping-cart/vendor/psr/event-dispatcher" />
+      <excludeFolder url="file://$MODULE_DIR$/shopping-cart/vendor/laravel/sanctum" />
+      <excludeFolder url="file://$MODULE_DIR$/shopping-cart/vendor/laravel/tinker" />
+      <excludeFolder url="file://$MODULE_DIR$/shopping-cart/vendor/hamcrest/hamcrest-php" />
+      <excludeFolder url="file://$MODULE_DIR$/shopping-cart/vendor/laravel/serializable-closure" />
+      <excludeFolder url="file://$MODULE_DIR$/shopping-cart/vendor/laravel/framework" />
+      <excludeFolder url="file://$MODULE_DIR$/shopping-cart/vendor/graham-campbell/result-type" />
+      <excludeFolder url="file://$MODULE_DIR$/shopping-cart/vendor/psr/http-message" />
+      <excludeFolder url="file://$MODULE_DIR$/shopping-cart/vendor/mockery/mockery" />
+      <excludeFolder url="file://$MODULE_DIR$/shopping-cart/vendor/psr/http-client" />
+      <excludeFolder url="file://$MODULE_DIR$/shopping-cart/vendor/psr/container" />
+      <excludeFolder url="file://$MODULE_DIR$/shopping-cart/vendor/nesbot/carbon" />
+      <excludeFolder url="file://$MODULE_DIR$/shopping-cart/vendor/phpunit/php-code-coverage" />
+      <excludeFolder url="file://$MODULE_DIR$/shopping-cart/vendor/phpunit/phpunit" />
+      <excludeFolder url="file://$MODULE_DIR$/shopping-cart/vendor/phpunit/php-text-template" />
+      <excludeFolder url="file://$MODULE_DIR$/shopping-cart/vendor/myclabs/deep-copy" />
+      <excludeFolder url="file://$MODULE_DIR$/shopping-cart/vendor/phpunit/php-invoker" />
+      <excludeFolder url="file://$MODULE_DIR$/shopping-cart/vendor/phpunit/php-file-iterator" />
+      <excludeFolder url="file://$MODULE_DIR$/shopping-cart/vendor/phpunit/php-timer" />
+      <excludeFolder url="file://$MODULE_DIR$/shopping-cart/vendor/theseer/tokenizer" />
+      <excludeFolder url="file://$MODULE_DIR$/shopping-cart/vendor/nunomaduro/collision" />
+      <excludeFolder url="file://$MODULE_DIR$/shopping-cart/vendor/psr/http-factory" />
+      <excludeFolder url="file://$MODULE_DIR$/shopping-cart/vendor/psr/simple-cache" />
+      <excludeFolder url="file://$MODULE_DIR$/shopping-cart/vendor/doctrine/lexer" />
+      <excludeFolder url="file://$MODULE_DIR$/shopping-cart/vendor/doctrine/instantiator" />
+      <excludeFolder url="file://$MODULE_DIR$/shopping-cart/vendor/doctrine/inflector" />
+      <excludeFolder url="file://$MODULE_DIR$/shopping-cart/vendor/vlucas/phpdotenv" />
+      <excludeFolder url="file://$MODULE_DIR$/shopping-cart/vendor/composer" />
+      <excludeFolder url="file://$MODULE_DIR$/shopping-cart/vendor/phar-io/version" />
+      <excludeFolder url="file://$MODULE_DIR$/shopping-cart/vendor/phar-io/manifest" />
+      <excludeFolder url="file://$MODULE_DIR$/shopping-cart/vendor/tijsverkoyen/css-to-inline-styles" />
+      <excludeFolder url="file://$MODULE_DIR$/shopping-cart/vendor/filp/whoops" />
+      <excludeFolder url="file://$MODULE_DIR$/shopping-cart/vendor/spatie/backtrace" />
+      <excludeFolder url="file://$MODULE_DIR$/shopping-cart/vendor/dragonmantank/cron-expression" />
+      <excludeFolder url="file://$MODULE_DIR$/shopping-cart/vendor/spatie/ignition" />
+      <excludeFolder url="file://$MODULE_DIR$/shopping-cart/vendor/spatie/laravel-ignition" />
+      <excludeFolder url="file://$MODULE_DIR$/shopping-cart/vendor/spatie/flare-client-php" />
+      <excludeFolder url="file://$MODULE_DIR$/shopping-cart/vendor/symfony/polyfill-mbstring" />
+      <excludeFolder url="file://$MODULE_DIR$/shopping-cart/vendor/symfony/finder" />
+      <excludeFolder url="file://$MODULE_DIR$/shopping-cart/vendor/symfony/deprecation-contracts" />
+      <excludeFolder url="file://$MODULE_DIR$/shopping-cart/vendor/symfony/routing" />
+      <excludeFolder url="file://$MODULE_DIR$/shopping-cart/vendor/symfony/polyfill-intl-grapheme" />
+      <excludeFolder url="file://$MODULE_DIR$/shopping-cart/vendor/phpdocumentor/reflection-docblock" />
+      <excludeFolder url="file://$MODULE_DIR$/shopping-cart/vendor/dflydev/dot-access-data" />
+      <excludeFolder url="file://$MODULE_DIR$/shopping-cart/vendor/symfony/css-selector" />
+      <excludeFolder url="file://$MODULE_DIR$/shopping-cart/vendor/phpdocumentor/type-resolver" />
+      <excludeFolder url="file://$MODULE_DIR$/shopping-cart/vendor/symfony/polyfill-intl-normalizer" />
+      <excludeFolder url="file://$MODULE_DIR$/shopping-cart/vendor/phpdocumentor/reflection-common" />
+      <excludeFolder url="file://$MODULE_DIR$/shopping-cart/vendor/symfony/polyfill-php80" />
+      <excludeFolder url="file://$MODULE_DIR$/shopping-cart/vendor/psy/psysh" />
+      <excludeFolder url="file://$MODULE_DIR$/shopping-cart/vendor/symfony/mailer" />
+      <excludeFolder url="file://$MODULE_DIR$/shopping-cart/vendor/symfony/mime" />
+      <excludeFolder url="file://$MODULE_DIR$/shopping-cart/vendor/symfony/polyfill-ctype" />
+      <excludeFolder url="file://$MODULE_DIR$/shopping-cart/vendor/symfony/polyfill-php72" />
+      <excludeFolder url="file://$MODULE_DIR$/shopping-cart/vendor/symfony/error-handler" />
+      <excludeFolder url="file://$MODULE_DIR$/shopping-cart/vendor/symfony/event-dispatcher-contracts" />
+      <excludeFolder url="file://$MODULE_DIR$/shopping-cart/vendor/symfony/polyfill-intl-idn" />
+      <excludeFolder url="file://$MODULE_DIR$/shopping-cart/vendor/symfony/console" />
+      <excludeFolder url="file://$MODULE_DIR$/shopping-cart/vendor/facade/ignition-contracts" />
+      <excludeFolder url="file://$MODULE_DIR$/shopping-cart/vendor/symfony/event-dispatcher" />
+      <excludeFolder url="file://$MODULE_DIR$/shopping-cart/vendor/symfony/var-dumper" />
+      <excludeFolder url="file://$MODULE_DIR$/shopping-cart/vendor/egulias/email-validator" />
+      <excludeFolder url="file://$MODULE_DIR$/shopping-cart/vendor/symfony/http-foundation" />
+      <excludeFolder url="file://$MODULE_DIR$/shopping-cart/vendor/symfony/polyfill-php81" />
+      <excludeFolder url="file://$MODULE_DIR$/shopping-cart/vendor/symfony/http-kernel" />
+      <excludeFolder url="file://$MODULE_DIR$/shopping-cart/vendor/symfony/translation-contracts" />
+      <excludeFolder url="file://$MODULE_DIR$/shopping-cart/vendor/symfony/service-contracts" />
+      <excludeFolder url="file://$MODULE_DIR$/shopping-cart/vendor/symfony/string" />
+      <excludeFolder url="file://$MODULE_DIR$/shopping-cart/vendor/symfony/translation" />
+      <excludeFolder url="file://$MODULE_DIR$/shopping-cart/vendor/symfony/process" />
+      <excludeFolder url="file://$MODULE_DIR$/shopping-cart/vendor/voku/portable-ascii" />
+      <excludeFolder url="file://$MODULE_DIR$/shopping-cart/vendor/fakerphp/faker" />
+      <excludeFolder url="file://$MODULE_DIR$/shopping-cart/vendor/monolog/monolog" />
+      <excludeFolder url="file://$MODULE_DIR$/shopping-cart/vendor/fruitcake/php-cors" />
+      <excludeFolder url="file://$MODULE_DIR$/shopping-cart/vendor/phpspec/prophecy" />
+      <excludeFolder url="file://$MODULE_DIR$/shopping-cart/vendor/phpoption/phpoption" />
+      <excludeFolder url="file://$MODULE_DIR$/shopping-cart/vendor/webmozart/assert" />
+      <excludeFolder url="file://$MODULE_DIR$/shopping-cart/vendor/nette/utils" />
+      <excludeFolder url="file://$MODULE_DIR$/shopping-cart/vendor/ralouphie/getallheaders" />
+      <excludeFolder url="file://$MODULE_DIR$/shopping-cart/vendor/guzzlehttp/promises" />
+      <excludeFolder url="file://$MODULE_DIR$/shopping-cart/vendor/guzzlehttp/psr7" />
+      <excludeFolder url="file://$MODULE_DIR$/shopping-cart/vendor/guzzlehttp/guzzle" />
+      <excludeFolder url="file://$MODULE_DIR$/shopping-cart/vendor/sebastian/type" />
+      <excludeFolder url="file://$MODULE_DIR$/shopping-cart/vendor/sebastian/diff" />
+      <excludeFolder url="file://$MODULE_DIR$/shopping-cart/vendor/sebastian/lines-of-code" />
+      <excludeFolder url="file://$MODULE_DIR$/shopping-cart/vendor/sebastian/object-enumerator" />
+      <excludeFolder url="file://$MODULE_DIR$/shopping-cart/vendor/nette/schema" />
+      <excludeFolder url="file://$MODULE_DIR$/shopping-cart/vendor/sebastian/comparator" />
+      <excludeFolder url="file://$MODULE_DIR$/shopping-cart/vendor/sebastian/code-unit" />
+      <excludeFolder url="file://$MODULE_DIR$/shopping-cart/vendor/sebastian/exporter" />
+      <excludeFolder url="file://$MODULE_DIR$/shopping-cart/vendor/ramsey/collection" />
+      <excludeFolder url="file://$MODULE_DIR$/shopping-cart/vendor/sebastian/cli-parser" />
+      <excludeFolder url="file://$MODULE_DIR$/shopping-cart/vendor/ramsey/uuid" />
+      <excludeFolder url="file://$MODULE_DIR$/shopping-cart/vendor/sebastian/version" />
+      <excludeFolder url="file://$MODULE_DIR$/shopping-cart/vendor/sebastian/complexity" />
+      <excludeFolder url="file://$MODULE_DIR$/shopping-cart/vendor/sebastian/recursion-context" />
+      <excludeFolder url="file://$MODULE_DIR$/shopping-cart/vendor/sebastian/resource-operations" />
+      <excludeFolder url="file://$MODULE_DIR$/shopping-cart/vendor/league/flysystem" />
+      <excludeFolder url="file://$MODULE_DIR$/shopping-cart/vendor/sebastian/global-state" />
+      <excludeFolder url="file://$MODULE_DIR$/shopping-cart/vendor/sebastian/environment" />
+      <excludeFolder url="file://$MODULE_DIR$/shopping-cart/vendor/sebastian/code-unit-reverse-lookup" />
+      <excludeFolder url="file://$MODULE_DIR$/shopping-cart/vendor/sebastian/object-reflector" />
+    </content>
+    <orderEntry type="inheritedJdk" />
+    <orderEntry type="sourceFolder" forTests="false" />
+  </component>
+</module>
