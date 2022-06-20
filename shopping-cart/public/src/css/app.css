@@ -1,3 +1,16 @@
 .thumbnail img {
     max-height: 200px;
 }
+
+.thumbnail .description {
+    color: #6b7280;
+}
+
+.price {
+    font-weight: bold;
+    font-size: 25px;
+}
+
+.footer a {
+    margin-bottom: 15px;
+}
