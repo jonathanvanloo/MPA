@@ -1,5 +1,6 @@
 <?php
 
+use App\models\Product;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -14,5 +15,13 @@ use Illuminate\Support\Facades\Route;
 */
 
 Route::get('/', function () {
-    return view('shop.index');
+    return view('products', [
+        'products' => product::all()
+    ]);
+});
+
+Route::get('products/{post}', function ($id) {
+    return view('product', [
+        'product' => product::firstOrFail($id)
+    ]);
 });
