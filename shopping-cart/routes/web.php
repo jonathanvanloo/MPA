@@ -2,6 +2,7 @@
 
 use App\models\Product;
 use Illuminate\Support\Facades\Route;
+use App\Http\Controllers\ProductController;
 
 /*
 |--------------------------------------------------------------------------
@@ -14,14 +15,24 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/', function () {
-    return view('products', [
-        'products' => product::all()
-    ]);
-});
+Route::get('/add-to-cart/{id}', [ProductController::class, 'getAddToCart']);
 
-Route::get('products/{post}', function ($id) {
-    return view('product', [
-        'product' => product::firstOrFail($id)
-    ]);
-});
+Route::resource('/', ProductController::class);
+
+//Route::get('products/{post}', function ($id) {
+//    return view('product', [
+//        'product' => product::firstOrFail($id)
+//    ]);
+//});
+
+Auth::routes();
+
+Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
+
+Auth::routes();
+
+Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
+
+Auth::routes();
+
+Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
