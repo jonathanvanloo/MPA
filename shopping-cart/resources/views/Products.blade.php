@@ -16,7 +16,7 @@
                     <p class="description">{{ $product->description }}</p>
                     <div class="footer">
                         <div class="float-left price">€{{ $product->price }}</div>
-                        <a href="{{ route('product.addToCart', ['id' => $product->id]) }}" class="btn btn-success float-right" role="button">Add to Cart</a>
+                        <a href="{{ route('addToCart', ['id' => $product->id]) }}" class="btn btn-success float-right" role="button">Add to Cart</a>
                     </div>
                 </div>
             </div>

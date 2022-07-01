@@ -15,15 +15,13 @@ use App\Http\Controllers\ProductController;
 |
 */
 
-Route::get('/add-to-cart/{id}', [ProductController::class, 'getAddToCart']);
+Route::get('/add-to-cart/{id}', [ProductController::class, 'getAddToCart'])->name('addToCart');
 
-Route::resource('/', ProductController::class);
+Route::resource('/', ProductController::class)->name('index', 'shop');
 
-//Route::get('products/{post}', function ($id) {
-//    return view('product', [
-//        'product' => product::firstOrFail($id)
-//    ]);
-//});
+Route::get('/shopping-cart', [ProductController::class, 'getCart'])->name('shoppingCart');
+//Route::resource('/shopping-cart', ProductController::class)->name('getCart', 'shoppingCart');
+//Route::get('/shopping-cart', 'ProductController@getCart')->name('shoppingCart');
 
 Auth::routes();
 

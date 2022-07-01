@@ -2,10 +2,10 @@
 
 namespace App\Http\Controllers;
 
-use App\Models\Cart;
 use App\Routes;
-use Illuminate\Http\Request;
+use App\Models\Cart;
 use App\Models\Product;
+use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Session;
 
 class ProductController extends Controller
@@ -26,7 +26,16 @@ class ProductController extends Controller
        $cart->add($product, $product->id);
 
        $request->session()->put('cart', $cart);
-       dd($request->session()->get('cart'));
-       return redirect()->route('products');
+       return redirect()->route('shop');
     }
+
+    public function getCart() {
+        if (!Session::has('cart')) {
+            return view('shopping-cart');
+        }
+        $oldCart = Session::get('cart');
+        $cart = new Cart($oldCart);
+        return view('shopping-cart', ['products' => $cart->items, 'totalPrice' => $cart->totalPrice]);
+    }
+
 }
