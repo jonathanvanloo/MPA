@@ -1,6 +1,7 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
+use App\Http\Controllers\ProductController;
 
 /*
 |--------------------------------------------------------------------------
@@ -12,10 +13,23 @@ use Illuminate\Support\Facades\Route;
 | contains the "web" middleware group. Now create something great!
 |
 */
+Route::get('/', [ProductController::class, 'index'])->name('shop');
 
-Route::get('/', function () {
-    return view('welcome');
-});
+Route::get('/product/{id}', [ProductController::class, 'getProduct'])->name('product');
+
+Route::get('/category/{id}', [ProductController::class, 'getCategory'])->name('category');
+
+Route::get('/add-in-cart/{id}', [ProductController::class, 'getAddInCart'])->name('addInCart');
+
+Route::get('/add-to-cart/{id}', [ProductController::class, 'getAddToCart'])->name('addToCart');
+
+Route::get('/delete-from-cart/{id}', [ProductController::class, 'getDeleteFromCart'])->name('deleteFromCart');
+
+Route::get('/shoppingCart/', [ProductController::class, 'getCart'])->name('shoppingCart');
+
+Route::get('/Checkout/', [ProductController::class, 'getCheckout'])->name('checkout');
+
+Route::post('/Checkout/', [ProductController::class, 'postCheckout'])->name('checkout');
 
 Route::get('/dashboard', function () {
     return view('dashboard');
