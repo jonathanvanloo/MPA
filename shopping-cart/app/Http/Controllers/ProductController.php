@@ -32,10 +32,7 @@ class ProductController extends Controller
         ]);
     }
 
-    public function getCategory(Category $category)
-    {
-        $product = Product::all();
-//dd($category->product);
+    public function getCategory(Category $category) {
         return view('category',[
             'product' => $category->product
         ]);
@@ -98,12 +95,15 @@ class ProductController extends Controller
         $order->cart = serialize($cart);
         $order->address = $request->input('address');
         $order->name = $request->input('name');
-//        $order->user_id = 1;
-//        Auth::user()->orders()->save($order);
-        $category = new User();
-        $category->orders()->save($order);
+        Auth::user()->orders()->save($order);
         Session::forget('cart');
         return redirect()->route('shop')->with('success', 'Successfully purchased products!');
+    }
+
+    public function getDashboard() {
+        return view('dashboard',[
+            'order' => Order::all()
+        ]);
     }
 
 }

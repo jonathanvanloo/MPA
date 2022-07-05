@@ -4,14 +4,12 @@
             {{ __('Dashboard') }}
         </h2>
     </x-slot>
-
-    <div class="py-12">
-        <div class="max-w-7xl mx-auto sm:px-6 lg:px-8">
-            <div class="bg-white overflow-hidden shadow-sm sm:rounded-lg">
-                <div class="p-6 bg-white border-b border-gray-200">
-                    You're logged in!
-                </div>
-            </div>
-        </div>
-    </div>
+                        <div class="row">
+{{--                            <h1>{{ dd($order) }}</h1>--}}
+                            @foreach($order as $order)
+                                <div class="col-sm-6 col-md-4 border">
+                                    <h5>{{ $order->cart }}</h5>
+                                </div>
+                            @endforeach
+                        </div>
 </x-app-layout>
