@@ -1,8 +1,6 @@
 <?php
 
-use App\models\Product;
 use Illuminate\Support\Facades\Route;
-use App\Http\Controllers\ProductController;
 
 /*
 |--------------------------------------------------------------------------
@@ -15,22 +13,12 @@ use App\Http\Controllers\ProductController;
 |
 */
 
-Route::get('/add-to-cart/{id}', [ProductController::class, 'getAddToCart'])->name('addToCart');
+Route::get('/', function () {
+    return view('welcome');
+});
 
-Route::resource('/', ProductController::class)->name('index', 'shop');
+Route::get('/dashboard', function () {
+    return view('dashboard');
+})->middleware(['auth'])->name('dashboard');
 
-Route::get('/shopping-cart', [ProductController::class, 'getCart'])->name('shoppingCart');
-//Route::resource('/shopping-cart', ProductController::class)->name('getCart', 'shoppingCart');
-//Route::get('/shopping-cart', 'ProductController@getCart')->name('shoppingCart');
-
-Auth::routes();
-
-Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
-
-Auth::routes();
-
-Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
-
-Auth::routes();
-
-Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
+require __DIR__.'/auth.php';
