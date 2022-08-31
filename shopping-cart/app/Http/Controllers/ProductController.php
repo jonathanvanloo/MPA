@@ -43,7 +43,6 @@ class ProductController extends Controller
        $oldCart = Session::has('cart') ? Session::get('cart') : null;
        $cart = new Cart($oldCart);
        $cart->add($product, $product->id);
-
        $request->session()->put('cart', $cart);
        return redirect()->route('shop');
     }
@@ -52,9 +51,10 @@ class ProductController extends Controller
         $oldCart = Session::has('cart') ? Session::get('cart') : null;
         $cart = new Cart($oldCart);
         $cart->deleteProduct($id);
-
         Session::put('cart', $cart);
-        return redirect()->route('shoppingCart');
+        if (url()->previous() == "http://127.0.0.1:8000/") {
+            return redirect()->route('shop');
+        } else { return redirect()->route('shoppingCart'); }
     }
 
     public function getAddInCart($id) {

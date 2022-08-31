@@ -4,12 +4,13 @@
             {{ __('Dashboard') }}
         </h2>
     </x-slot>
-                        <div class="row">
-{{--                            <h1>{{ dd($order) }}</h1>--}}
-                            @foreach($order as $order)
-                                <div class="col-sm-6 col-md-4 border">
-                                    <h5>{{ $order->cart }}</h5>
-                                </div>
-                            @endforeach
-                        </div>
+        <div class="row">
+            @foreach($order as $order)
+                @if(Auth::id() == $order->user_id)
+                    <div class="col-sm-6 col-md-4 border">
+                        <h5>{{ $order }}</h5>
+                    </div>
+                @endif
+            @endforeach
+        </div>
 </x-app-layout>
