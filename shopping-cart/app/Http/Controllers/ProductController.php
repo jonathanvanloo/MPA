@@ -12,8 +12,10 @@ use Illuminate\Support\Facades\Auth;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Session;
 
+//  this class controls the products
 class ProductController extends Controller
 {
+//    gets all the products
     public function index()
     {
         $product = Product::all();
@@ -23,6 +25,7 @@ class ProductController extends Controller
         ]);
     }
 
+//    gets individual products
     public function getProduct($id) {
 
         $product = Product::all();
@@ -32,49 +35,14 @@ class ProductController extends Controller
         ]);
     }
 
+//    gets all category's
     public function getCategory(Category $category) {
         return view('category',[
             'product' => $category->product
         ]);
     }
 
-    public function getAddToCart(Request $request, $id) {
-       $product = Product::find($id);
-       $oldCart = Session::has('cart') ? Session::get('cart') : null;
-       $cart = new Cart($oldCart);
-       $cart->add($product, $product->id);
-       $request->session()->put('cart', $cart);
-       return redirect()->route('shop');
-    }
-
-    public function getDeleteFromCart($id) {
-        $oldCart = Session::has('cart') ? Session::get('cart') : null;
-        $cart = new Cart($oldCart);
-        $cart->deleteProduct($id);
-        Session::put('cart', $cart);
-        if (url()->previous() == "http://127.0.0.1:8000/") {
-            return redirect()->route('shop');
-        } else { return redirect()->route('shoppingCart'); }
-    }
-
-    public function getAddInCart($id) {
-        $oldCart = Session::has('cart') ? Session::get('cart') : null;
-        $cart = new Cart($oldCart);
-        $cart->addProduct($id);
-
-        Session::put('cart', $cart);
-        return redirect()->route('shoppingCart');
-    }
-
-    public function getCart() {
-        if (!Session::has('cart')) {
-            return view('shopping-cart');
-        }
-        $oldCart = Session::get('cart');
-        $cart = new Cart($oldCart);
-        return view('shopping-cart', ['products' => $cart->items, 'totalPrice' => $cart->totalPrice]);
-    }
-
+//    continues to checkout
     public function getCheckout() {
         if (!Session::has('cart')) {
             return view('shopping-cart');
@@ -85,6 +53,7 @@ class ProductController extends Controller
         return view('checkout', ['total' => $total]);
     }
 
+//    checks out and saves the order
     public function postCheckout(Request $request) {
         if (!Session::has('cart')) {
             return redirect('shopping-cart');
@@ -100,7 +69,8 @@ class ProductController extends Controller
         return redirect()->route('shop')->with('success', 'Successfully purchased products!');
     }
 
-    public function getDashboard() {
+//    gets all the orders
+    public function getOrder() {
         return view('dashboard',[
             'order' => Order::all()
         ]);
