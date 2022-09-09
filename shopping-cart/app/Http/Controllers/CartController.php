@@ -7,7 +7,7 @@ use App\Models\Product;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Session;
 
-//  this class controls th cart
+//  this class controls the cart
 class CartController extends Controller
 {
 
